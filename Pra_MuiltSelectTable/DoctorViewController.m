@@ -105,20 +105,21 @@
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     NSLog(@"scrollViewDidEndDragging");
 
-    if (scrollView.tag == 12 ) {
+    if (scrollView.tag == 12) {
         [scrollView setContentOffset:CGPointMake(     floorf((float)scrollView.contentOffset.x / _contentArray.frame.size.width) * (_contentArray.frame.size.width+5) , scrollView.contentOffset.y) animated:YES];
     }
+
 }
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
+{
+    if (scrollView.tag == 12) {
+        [scrollView setContentOffset:CGPointMake(     floorf((float)scrollView.contentOffset.x / _contentArray.frame.size.width) * (_contentArray.frame.size.width+5) , scrollView.contentOffset.y) animated:YES];
+    }}
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     
     NSLog(@"scrollViewDidEndScrollingAnimation");
-    
-    //UIButton* selecyBtn = (UIButton*)[_titleArray viewWithTag:(int)floorf((float)scrollView.contentOffset.x / _contentArray.frame.size.width)];
-    //[selecyBtn sendActionsForControlEvents:UIControlEventTouchUpInside];
-    // 有效的动画方法为：
-    //    - (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated 方法
-    //    - (void)scrollRectToVisible:(CGRect)rect animated:(BOOL)animated 方法
 }
 
 -(void)testClick:(id) sender{

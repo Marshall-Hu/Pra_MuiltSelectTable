@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"asdasda");
+    
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];//隐藏navigationBar下边的横线
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];//设置透明背景
+
 }
 
 

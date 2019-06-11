@@ -13,6 +13,8 @@
 		00D4029C22ACDC97005CD515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D4029B22ACDC97005CD515 /* Assets.xcassets */; };
 		00D4029F22ACDC97005CD515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D4029D22ACDC97005CD515 /* LaunchScreen.storyboard */; };
 		00D402A222ACDC97005CD515 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D402A122ACDC97005CD515 /* main.m */; };
+		00D402A922ACDCB3005CD515 /* 主要页面.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00D402A822ACDCB3005CD515 /* 主要页面.jpg */; };
+		00D402AC22ACDDE6005CD515 /* DoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D402AB22ACDDE6005CD515 /* DoctorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		00D4029E22ACDC97005CD515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00D402A022ACDC97005CD515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D402A122ACDC97005CD515 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00D402A822ACDCB3005CD515 /* 主要页面.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "主要页面.jpg"; sourceTree = "<group>"; };
+		00D402AA22ACDDE6005CD515 /* DoctorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoctorViewController.h; sourceTree = "<group>"; };
+		00D402AB22ACDDE6005CD515 /* DoctorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoctorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		00D4029122ACDC96005CD515 /* Pra_MuiltSelectTable */ = {
 			isa = PBXGroup;
 			children = (
+				00D402A822ACDCB3005CD515 /* 主要页面.jpg */,
 				00D4029222ACDC96005CD515 /* AppDelegate.h */,
 				00D4029322ACDC96005CD515 /* AppDelegate.m */,
 				00D4029522ACDC96005CD515 /* ViewController.h */,
@@ -67,6 +73,8 @@
 				00D4029D22ACDC97005CD515 /* LaunchScreen.storyboard */,
 				00D402A022ACDC97005CD515 /* Info.plist */,
 				00D402A122ACDC97005CD515 /* main.m */,
+				00D402AA22ACDDE6005CD515 /* DoctorViewController.h */,
+				00D402AB22ACDDE6005CD515 /* DoctorViewController.m */,
 			);
 			path = Pra_MuiltSelectTable;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D4029F22ACDC97005CD515 /* LaunchScreen.storyboard in Resources */,
+				00D402A922ACDCB3005CD515 /* 主要页面.jpg in Resources */,
 				00D4029C22ACDC97005CD515 /* Assets.xcassets in Resources */,
 				00D4029A22ACDC96005CD515 /* Main.storyboard in Resources */,
 			);
@@ -144,6 +153,7 @@
 				00D4029722ACDC96005CD515 /* ViewController.m in Sources */,
 				00D402A222ACDC97005CD515 /* main.m in Sources */,
 				00D4029422ACDC96005CD515 /* AppDelegate.m in Sources */,
+				00D402AC22ACDDE6005CD515 /* DoctorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3N5Q34FV45;
 				INFOPLIST_FILE = Pra_MuiltSelectTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3N5Q34FV45;
 				INFOPLIST_FILE = Pra_MuiltSelectTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
